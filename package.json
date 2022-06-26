@@ -1,0 +1,22 @@
+{
+  "name": "sage-api",
+  "version": "0.0.1",
+  "description": "Sage API Wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansellc/sage-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansellc/sage-api/issues"
+  },
+  "homepage": "https://github.com/ansellc/sage-api#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
+}
