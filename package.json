@@ -1,22 +1,31 @@
 {
-  "name": "sage-api",
-  "version": "0.0.1",
-  "description": "Sage API Wrapper",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ansellc/sage-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ansellc/sage-api/issues"
-  },
-  "homepage": "https://github.com/ansellc/sage-api#readme",
-  "devDependencies": {
-    "@types/node": "^18.0.0"
-  }
+    "name": "@ansellc/sage-api",
+    "version": "0.0.1",
+    "description": "Sage API Wrapper",
+    "types": "types/sage.d.ts",
+    "exports": "./dist/sage.js",
+    "private": true,
+    "scripts": {
+        "build": "rimraf dist && rimraf types && tsc && esbuild src/sage.ts --bundle --minify --format=esm --legal-comments=none --platform=node --outfile=dist/sage.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ansellc/sage-api.git"
+    },
+    "author": "Ansell Cruz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ansellc/sage-api/issues"
+    },
+    "homepage": "https://github.com/ansellc/sage-api#readme",
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "esbuild": "^0.14.47",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.7.4"
+    },
+    "keywords": [
+        "sage",
+        "accounting"
+    ]
 }

@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "es2020",
+      "lib": [
+        "esnext",
+        "DOM"
+      ],
+      "rootDir": "src",
+      "outDir": "types",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "alwaysStrict": true,
+      "strict": true,
+      "noImplicitOverride": true,
+      "removeComments": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "skipLibCheck": true,
+      "newLine": "crlf"
+    },
+    "exclude": [
+      "test"
+    ]
+  }
