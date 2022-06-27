@@ -1,6 +1,6 @@
 {
     "name": "@ansellc/sage-api",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Sage API Wrapper",
     "types": "types/sage.d.ts",
     "exports": "./dist/sage.js",
