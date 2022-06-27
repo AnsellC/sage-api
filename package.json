@@ -1,10 +1,9 @@
 {
     "name": "@ansellc/sage-api",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Sage API Wrapper",
     "types": "types/sage.d.ts",
     "exports": "./dist/sage.js",
-    "private": true,
     "scripts": {
         "build": "rimraf dist && rimraf types && tsc && esbuild src/sage.ts --bundle --minify --format=esm --legal-comments=none --platform=node --outfile=dist/sage.js"
     },
