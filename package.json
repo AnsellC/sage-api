@@ -1,11 +1,15 @@
 {
     "name": "@ansellc/sage-api",
-    "version": "0.0.3",
+    "version": "0.0.8",
     "description": "Sage API Wrapper",
     "types": "types/sage.d.ts",
     "exports": "./dist/sage.js",
+    "engines": {
+        "node": ">=12",
+        "npm": ">=6"
+    },
     "scripts": {
-        "build": "rimraf dist && rimraf types && tsc && esbuild src/sage.ts --bundle --minify --format=esm --legal-comments=none --platform=node --outfile=dist/sage.js"
+        "build": "rimraf dist && rimraf types && tsc && esbuild src/sage.ts --bundle --minify --legal-comments=none --platform=node --outfile=dist/sage.js"
     },
     "repository": {
         "type": "git",
